@@ -1,0 +1,158 @@
+/******************************************************************
+Theme Name: Travel 
+Description: 
+Author: yoeuns
+Author URI: 
+Version: 1.0
+Created: 
+******************************************************************/
+/*------------------------------------------------------------------
+
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. 모달 창에 뜨는 css 집합
+
+-------------------------------------------------------------------*/
+/* =================================== */
+/*  Font Family and Colors Styles
+/* =================================== */
+/*
+
+$primary-font	: 'Poppins', sans-serif;
+---------------------------------------------
+
+$primary-color	: #f8b600;
+$title-color	: #222222;
+$text-color		: #777777;
+
+$white			: #fff;
+$offwhite		: #f9f9ff;
+$black			: #222;
+
+*/
+/* =================================== */
+/*  나이 별 가격
+/* =================================== */
+
+.input-number-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-number-group input[type=number]::-webkit-inner-spin-button,
+.input-number-group input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.input-number-group .input-group-button {
+  line-height: calc(80px/2 - 5px);
+}
+
+.input-number-group .input-number {
+  width: 80px;
+  padding: 0 12px;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+  display: block;
+  margin: 0;
+}
+
+.input-number-group .input-number,
+.input-number-group .input-number-decrement,
+.input-number-group .input-number-increment {
+  border: 1px solid #cacaca;
+  height: 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 0;
+}
+
+.input-number-group .input-number-decrement,
+.input-number-group .input-number-increment {
+  display: inline-block;
+  width: 40px;
+  background: #e6e6e6;
+  color: #0a0a0a;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 400;
+  border-radius: 50px;
+}
+
+.input-number-group .input-number-decrement:hover,
+.input-number-group .input-number-increment:hover {
+  display: inline-block;
+  width: 40px;
+  background: #f8b600;
+  color: #0a0a0a;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 400;
+  border-radius: 50px;
+}
+
+.input-number-group .input-number-decrement {
+  margin-right: 0.3rem;
+}
+
+.input-number-group .input-number-increment {
+  margin-left: 0.3rem;
+}
+
+.checkbox {
+      position: relative;
+      top: -0.375rem;
+      margin: 0 1rem 0 0;
+      cursor: pointer;
+    }
+
+    .checkbox:before {
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 1;
+      width: 1rem;
+      height: 1rem;
+      border: 2px solid #f2f2f2;
+    }
+
+    .checkbox:checked:before {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+     height: .5rem;
+      border-color: #f8b600;
+      border-top-style: none;
+      border-right-style: none;
+    }
+
+    .checkbox:after {
+      content: "";
+      position: absolute;
+      top: -0.125rem;
+      left: 0;
+      width: 1.1rem;
+      height: 1.1rem;
+      background: #fff;
+      cursor: pointer;
+    }
